@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISBN</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Registro</h1>
+    <form method="POST" action="/record">
+        <label for="user_company">Nombre de la compañia:</label><br>
+        <input type="text" id="user_company" name="user_company" required><br>
+
+        <label for="user_line">Nombre de la línea:</label><br>
+        <input type="text" id="user_line" name="user_line"></input><br>
+
+        <label for="capac_id">ID de la capacidad:</label><br>
+        <input type="text" id="capac_id" name="capac_id" required><br>
+
+        <label for="capac_line">Nombre de la línea:</label><br>
+        <input type="text" id="capac_line" name="capac_line"></input><br>
+
+        <label for="capac_date">Fecha de la capacidad:</label><br>
+        <input type="text" id="capac_date" name="capac_date"></input><br>
+
+        <label for="capac_time">Tiempo de la capacidad:</label><br>
+        <input type="text" id="capac_time" name="capac_time"></input><br>
+
+        <label for="capac_capacity"> Capacidad NTC:</label><br>
+        <input type="text" id="capac_capacity" name="capac_capacity"></input><br>
+
+        <button type="submit">Crear</button>
+    </form>
+</body>
+</html>
+
+
+
